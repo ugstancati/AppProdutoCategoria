@@ -1,0 +1,24 @@
+﻿@model ProdutoModel
+
+@{
+    ViewData["Title"] = "Editar Produto";
+}
+
+<h1>Editar Produto</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+            <partial name="_CamposPreenchimentoProduto" />
+
+            <div class="form-group">
+                <input type="submit" asp-action="Editar"  value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retornar a lista de Produtos</a>
+</div>
+
